@@ -31,9 +31,10 @@
 
   <title>Snowflake Company Dashboard</title>
   <link rel="manifest" href="manifest.json">
+  <script src="https://js.stripe.com/v3/"></script>
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "3106819416";
+    var serviceWorkerVersion = "3657556477";
   </script>
   <script src="flutter.js" defer></script>
   <script type="text/javascript">
@@ -56,6 +57,7 @@
   <textarea id="imageName" style="display: none;" hidden="hidden"></textarea>
   <textarea id="imageData" style="display: none;" hidden="hidden"></textarea>
 
+  <form id="checkOutForm" hidden="hidden"></form>
 
   <script>
       window.addEventListener('load', function(ev) {
