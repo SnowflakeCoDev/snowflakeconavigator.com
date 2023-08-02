@@ -1,11 +1,11 @@
 {
-    "name": "snowflake_dashboard_website",
-    "short_name": "snowflake_dashboard_website",
+    "name": "rm_gallery_dashboard_website",
+    "short_name": "rm_gallery_dashboard_website",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter application.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
