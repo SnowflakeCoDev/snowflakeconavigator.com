@@ -18,28 +18,48 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="RM Gallery Dashboard">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="rm_gallery_dashboard_website">
+  <meta name="apple-mobile-web-app-title" content="RM Gallery Dashboard Website">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="assets/assets/images/icon.png"/>
 
-  <title>rm_gallery_dashboard_website</title>
+  <title>RM Gallery Dashboard Website</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "741432299";
+    var serviceWorkerVersion = "3867165660";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <script type="text/javascript">
+    function getImageName() {
+        var finalResult = document.getElementById("imageName").innerHTML;
+        return finalResult;
+      }
+    function getImageData() {
+        var finalResult = document.getElementById("imageData").innerHTML;
+        return finalResult;
+      }
+    function getIsLoading() {
+        var finalResult = document.getElementById("isLoading").innerHTML;
+        return finalResult;
+      }
+  </script>
 </head>
 <body>
+  <textarea id="isLoading" style="display: none;" hidden="hidden"></textarea>
+  <textarea id="imageName" style="display: none;" hidden="hidden"></textarea>
+  <textarea id="imageData" style="display: none;" hidden="hidden"></textarea>
+
+  <form id="checkOutForm" hidden="hidden"></form>
+  <a id="downloadImage" hidden="hidden"></a>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
